@@ -136,10 +136,10 @@ for depth in range(2, 6):
         else:
             i -= 1
         i += 1
-
-    C = [10 for i in range (L)]
-    print(adj_node)
     """
+    C = [10 for i in range (L)]
+    #print(adj_node)
+    
     """
     src_dst = [[0, 7],
             [2, 1],
