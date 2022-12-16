@@ -315,6 +315,10 @@ for depth in range(2, 6):
     best_sol = sampleset.first
     #print(best_sol)
     print("time: %s" %(time.time() - start_time))
+    
+    embedding = sampleset.info['embedding_context']['embedding']
+    print(f"Numero di variabili logiche: {len(embedding.keys())}")
+    print(f"numero di qubit fisici usati nell'embedding: {sum(len(chain) for chain in embedding.values())}")
 
     print("####################### ising ###########################")
     h, j, offset = bqm.to_ising()
